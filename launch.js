@@ -1,3 +1,15 @@
+function loadScript(src) {
+    return new Promise(function(resolve, reject) {
+      let script = document.createElement('script');
+      script.src = src;
+  
+      script.onload = () => resolve(script);
+      script.onerror = () => reject(new Error(`Script load error for ${src}`));
+  
+      document.head.append(script);
+    });
+  }
+
 loadScript("https://bunrum.github.io/RuffleForGoogleSites/ruffle.js")
     .then(function(script) {
         window.RufflePlayer = window.RufflePlayer || {};
@@ -17,4 +29,4 @@ loadScript("https://bunrum.github.io/RuffleForGoogleSites/ruffle.js")
             player.style.width = "100%"; 
             player.style.height = "100%";
         });
-    }); 
+    })        
