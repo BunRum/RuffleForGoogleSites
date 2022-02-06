@@ -9,7 +9,7 @@ function loadScript(src) {
       document.head.append(script);
     });
   }
-
+let Swf = "";
 loadScript("https://bunrum.github.io/RuffleForGoogleSites/ruffle.js")
     .then(function(script) {
         window.RufflePlayer = window.RufflePlayer || {};
@@ -25,7 +25,7 @@ loadScript("https://bunrum.github.io/RuffleForGoogleSites/ruffle.js")
                     "letterbox": "on",
                 "unmuteOverlay": "visible",
             };
-            player.load("https://bunrum.github.io/RuffleForGoogleSites/portal.swf");
+            player.load(swf);
             player.style.width = "100%"; 
             player.style.height = "100%";
         });
