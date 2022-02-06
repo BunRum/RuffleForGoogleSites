@@ -17,4 +17,4 @@ loadScript("https://bunrum.github.io/RuffleForGoogleSites/ruffle.js")
             player.style.width = "100%"; 
             player.style.height = "100%";
         });
-    })        
+    }); 
