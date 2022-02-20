@@ -9,7 +9,7 @@ function loadScript(src) {
       document.head.append(script);
     });
   }
-const urlParams = new URLSearchParams(window.location);
+const urlParams = new URLSearchParams(window.location.search);
 const swf = urlParams.get('swf');
 console.log(window.location);
 console.log(swf);
