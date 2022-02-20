@@ -11,6 +11,7 @@ function loadScript(src) {
   }
 const urlParams = new URLSearchParams(window.location);
 const swf = urlParams.get('swf');
+console.log(swf)
 loadScript("https://bunrum.github.io/RuffleForGoogleSites/ruffle.js")
     .then(function(script) {
         window.RufflePlayer = window.RufflePlayer || {};
