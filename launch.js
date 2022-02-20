@@ -9,7 +9,8 @@ function loadScript(src) {
       document.head.append(script);
     });
   }
-let Swf = "";
+const urlParams = new URLSearchParams(window.location);
+const swf = urlParams.get('swf');
 loadScript("https://bunrum.github.io/RuffleForGoogleSites/ruffle.js")
     .then(function(script) {
         window.RufflePlayer = window.RufflePlayer || {};
