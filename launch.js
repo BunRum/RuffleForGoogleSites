@@ -25,6 +25,8 @@ loadScript("https://bunrum.github.io/RuffleForGoogleSites/ruffle.js")
                 "unmuteOverlay": "visible",
             };
             player.load(swf);
+            player.style.width = 512;
+            player.style.height = 512;
             player.style.position = "absolute";
             player.style.display = "contents";
         });
