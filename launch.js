@@ -20,13 +20,11 @@ loadScript("https://bunrum.github.io/RuffleForGoogleSites/ruffle.js")
             player.Config = {
                 "backgroundColor": "#000000",
                 "contextMenu": true,
-                    "autoplay": "auto",
-                    "letterbox": "on",
+                "autoplay": "auto",
+                "letterbox": "on",
                 "unmuteOverlay": "visible",
             };
             player.load(swf);
-            player.style.width = "2400px";
-            player.style.height = "1256px";
             player.style.position = "absolute";
             player.style.display = "contents";
         });
